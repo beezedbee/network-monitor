@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<monitor version="0.1">
+  <title>AXA London</title>
+  <site>
+    <name>Newgate</name>
+    <device>
+      <id>0</id>
+      <name>UK001CHLAN01</name>
+      <type>Monitor1.DeviceSwitch</type>
+      <ipaddress>10.128.8.1</ipaddress>
+      <x>10</x>
+      <y>10</y>
+    </device>
+    <device>
+      <id>1</id>
+      <name>UK001SWLAN05</name>
+      <type>Monitor1.DeviceSwitch</type>
+      <ipaddress>10.128.8.216</ipaddress>
+      <x>110</x>
+      <y>10</y>
+    </device>
+    <device>
+      <id>2</id>
+      <name>UK001VGLAN01</name>
+      <type>Monitor1.DeviceRouter</type>
+      <ipaddress>10.128.8.2</ipaddress>
+      <x>10</x>
+      <y>110</y>
+    </device>
+  </site>
+  <links>
+    <link>
+      <idfrom>0</idfrom>
+      <idto>1</idto>
+    </link>
+    <link>
+      <idfrom>0</idfrom>
+      <idto>2</idto>
+    </link>
+  </links>
+</monitor>
